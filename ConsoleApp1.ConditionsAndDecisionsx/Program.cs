@@ -23,23 +23,23 @@ if (grade < 50)
 {
     Console.WriteLine("Student has failed - F");
 }
-else if (grade <60)
+else if ((grade >= 50) && (grade < 60))
 {
     Console.WriteLine("Student has failed - D");
 }
-else if(grade < 65)
+else if((grade >= 60) && (grade < 65))
 {
     Console.WriteLine("Student has passed - C-");
 }
-else if (grade < 70)
+else if ((grade >= 65) && (grade < 70))
 {
     Console.WriteLine("Student has passed - C");
 }
-else if (grade < 75)
+else if ((grade >= 70) && (grade < 75))
 {
     Console.WriteLine("Student has passed - C+");
 }
-else if (grade < 86)
+else if ((grade >= 75) && (grade < 85))
 {
     Console.WriteLine("Student has passed - B");
 }
