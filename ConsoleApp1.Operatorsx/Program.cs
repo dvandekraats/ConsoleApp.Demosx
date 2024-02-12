@@ -57,20 +57,22 @@ Console.WriteLine("************************ End Of LOGIC Results ***************
 /*
     ASSIGNMENT Operations 
  */
-int randomValue = 5;
-int increaseValue = num1 += randomValue;
-int decreaseValue = num1 -= randomValue;
-int multiplyValue = num1 *= randomValue;
-int divideValue = num1 /= randomValue;
+
+Console.Write("Enter Random Value for Assignment Operations: ");
+int randomValue = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("************************ ASSIGNMENT Results **************************");
 Console.WriteLine();
-Console.WriteLine($"is {num1} greater than {num2}? result: {isGreaterThan}");
-Console.WriteLine($"is {num1} less than {num2}? result: {isLessThan}");
-Console.WriteLine($"is {num1} equal to {num2}? result: {isEqualTo}");
-Console.WriteLine($"is {num1} not equal to {num2}? result: {isNotEqualTo}");
-Console.WriteLine($"is {num1} greater than or equal to {num2}? result: {isGreaterThanOrEqualTo}");
-Console.WriteLine($"is {num1} less than or equal to {num2}? result: {isLessThanOrEqualTo}");
+num1 += randomValue;
+Console.WriteLine($"Num1 increased by {randomValue}: {num1}");
+num1 -= randomValue;
+Console.WriteLine($"Num1 reduced by {randomValue}: {num1}");
+num1 /= randomValue;
+Console.WriteLine($"Num1 divided by {randomValue}: {num1}");
+num1 %= randomValue;
+Console.WriteLine($"Num1 mod by {randomValue}: {num1}");
+num1 *= randomValue;
+Console.WriteLine($"Num1 multiplied by {randomValue}: {num1}");
 Console.WriteLine();
 Console.WriteLine("************************ End Of ASSIGNMENT Results **************************");
 
