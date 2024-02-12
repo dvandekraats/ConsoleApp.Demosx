@@ -1,2 +1,54 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+// Prompt for input
+Console.Write("Please enter student's grade: ");
+int grade = Convert.ToInt32(Console.ReadLine());
+
+// Decide to print pass or fail based on input
+Console.WriteLine("################## Simple If Results ###################");
+if (grade > 50)
+{
+    Console.WriteLine("Student has passed");
+}
+else
+{
+    Console.WriteLine("Student has failed");
+    Console.WriteLine("Refer student to Administration");
+}
+Console.WriteLine("################## Simple If Results End ###############");
+
+Console.WriteLine("########### Complex IF..ELSE IF Results ################");
+// Complex if...else if..statement - Decide to print letter graded based on grade value
+if (grade < 50)
+{
+    Console.WriteLine("Student has failed - F");
+}
+else if (grade <60)
+{
+    Console.WriteLine("Student has failed - D");
+}
+else if(grade < 65)
+{
+    Console.WriteLine("Student has passed - C-");
+}
+else if (grade < 70)
+{
+    Console.WriteLine("Student has passed - C");
+}
+else if (grade < 75)
+{
+    Console.WriteLine("Student has passed - C+");
+}
+else if (grade < 86)
+{
+    Console.WriteLine("Student has passed - B");
+}
+else
+{
+    Console.WriteLine("Student has passed - A");
+}
+Console.WriteLine("########### Complex IF..ELSE IF Results End ############");
+
+// The rest of the application
+Console.WriteLine("Thank you for using this program");
+
