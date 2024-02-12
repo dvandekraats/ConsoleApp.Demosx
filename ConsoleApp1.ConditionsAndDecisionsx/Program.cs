@@ -19,7 +19,7 @@ Console.WriteLine("################## Simple If Results End ###############");
 
 Console.WriteLine("########### Complex IF..ELSE IF Results ################");
 // Complex if...else if..statement - Decide to print letter graded based on grade value
-if (grade < 50)
+if ((grade >= 0) && (grade < 50))
 {
     Console.WriteLine("Student has failed - F");
 }
@@ -43,9 +43,13 @@ else if ((grade >= 75) && (grade < 85))
 {
     Console.WriteLine("Student has passed - B");
 }
-else
+else if ((grade >= 85) && (grade <= 100))
 {
     Console.WriteLine("Student has passed - A");
+}
+else
+{
+    Console.WriteLine("Please enter a valid grade (0-100)");
 }
 Console.WriteLine("########### Complex IF..ELSE IF Results End ############");
 
