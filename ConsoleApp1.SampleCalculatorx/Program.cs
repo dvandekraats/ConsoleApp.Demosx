@@ -8,7 +8,6 @@ while (choice != -1)
     // Prompt for user input
 
     // Show calculator options
-    Console.Clear(); // Clear the screen
     Console.WriteLine("Please select an operation (-1 to exit):");
     Console.WriteLine("1. Addition (+)");
     Console.WriteLine("2. Subtraction (-)");
@@ -24,7 +23,9 @@ while (choice != -1)
 
     Console.Write("Please enter the second number: ");
     int num2 = Convert.ToInt32(Console.ReadLine());
-    
+
+    // Make sure accumulator is reset to zero
+    int answer = 0;
     switch (choice)
     {
         case 1:
@@ -50,9 +51,6 @@ while (choice != -1)
         case 5:
             /* do fibonacci */
 
-            // Make sure accumulator is reset to zero
-            int answer = 0;
-
             for (int i = num1; i <= num2; i++)
             {
                 answer += i;
@@ -63,6 +61,9 @@ while (choice != -1)
             Console.WriteLine("Invalid choice, please restart.");
             break;
     }
+    Console.WriteLine("Press Enter to continue");
+    Console.ReadLine();
+    Console.Clear();
 }
 
 // print output
